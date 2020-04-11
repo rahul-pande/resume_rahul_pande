@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Credits : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% % Hyperlink Setup
+
+% \usepackage{hyperref}
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=blue,
+% }
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeJobSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}} r}
+      \textbf{#1}, #3 $\vert$ #2 & #4
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}} r}
+      \textbf{#1}, #3 $\vert$ #2 & #4
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}} r}
+      \textbf{#1} $\vert$ #2 & #4 \\
+       #3 & #5 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\projectsSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
+
+\newcommand{\resumeJobRole}[1]{\small{#1}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{ \vspace{-3pt} \begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Rahul Pande}}
+  &
+
+%   \faEnvelope
+  Worcester, MA 01609\\
+%   \href{https://github.com/rahul-pande}{github.com/rahul-pande} $\vert$
+%   \href{http://rahulpande.me/?utm_source=organic&utm_medium=resume&utm_campaign=intership_spring_2019}{rahulpande.me}
+%   $\vert$
+  \href{http://www.linkedin.com/in/pande-rahul}{linkedin.com/in/pande-rahul}
+  
+  &
+%   \faPhone
+  \href{mailto:rspande@wpi.edu}{rspande@wpi.edu} $\vert$ 508-333-9986\\
+\end{tabular*}
+
+
+% --------OBJECTIVE--------------------
+\section{objective}
+\begin{flushleft}
+{Seeking full-time opportunities from May 2020 in the field of Data Science and Analytics with focus in Machine Learning and Statistics}
+\end{flushleft}
+
+%-----------EDUCATION-----------------
+\section{education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Worcester Polytechnic Institute (WPI)}{Worcester, MA}
+      {Master of Science, Data Science}{May 2020}
+      {GPA: 3.88/4.0}
+    
+    \vspace{-3pt}
+    
+    \resumeSubheading
+      {Vishwakarma Institute of Technology (VIT, Pune)}{Pune, India}
+      {Bachelor of Technology, Electronics and Telecommunication}{May 2015}
+      {GPA: 8.59/10}
+  \resumeSubHeadingListEnd
+
+% -------------COURSES----------------
+\section{graduate coursework}
+ 
+{Statistical Learning, Deep Learning, Non-Linear Dimensionality Reduction, Big Data Management, Math Foundations}
+
+% --------------SKILLS----------------
+\section{skills}
+ 
+ \textbf{Programming:} {Python, R, SQL, Java }
+ \hfill
+ \textbf{Technologies:} {Hadoop, Spark, Redshift, Tableau, D3, MongoDB}
+ \newline
+ \textbf{Development Environments:}{ Tensorflow, Keras, scikit-learn, numpy, pandas, matplotlib, slurm (HPC)}
+ 
+%-----------PROJECTS-----------------
+\section{projects}
+  \resumeSubHeadingListStart
+  
+      \resumeProjectSubheading
+      {Dimensionality Reduction of Images}{Worcester, MA}
+      {WPI} {December 2019}
+      
+      \resumeItemListStart
+        \resumeItem
+        {}
+        {Reduced image dimensionality from 116412 to 16 by fine tuning VGGFace2 network on CelebA data (Celebrity Attributes Dataset) and predicted gender with ~88\% accuracy}
+        
+        \resumeItem
+        {}
+        {Applied techniques like Kernel - PCA, ISOMAP, ICA to approximate data onto a low dimensional manifold}
+      \resumeItemListEnd
+      
+      \resumeProjectSubheading
+      {Music Generation with Neural Networks}{Worcester, MA}
+      {WPI} {April 2019}
+      
+      \resumeItemListStart
+        \resumeItem
+        {}
+        {Synthesized music sequences (MIDI notes) with deep learning, which outperformed $\sqrt{n}$ randomized real sequences}
+        
+        \resumeItem
+        {}
+        {LSTM implementation predicted next $n$ notes given a sequence of real notes, while the GAN implementation generated note sequences from random noise; Implemented using Tensorflow and Keras}
+      \resumeItemListEnd
+      
+    %   \resumeJobSubheading
+    %   {Blind Source Separation}{Worcester, MA}
+    %   {WPI} {December 2018}
+      
+    %   \resumeItemListStart
+    %     \resumeItem
+    %     {}
+    %     {Separating linearly mixed images using Non-negative Matrix Factorization (NMF) and Independent Component Analysis (ICA)}
+    %   \resumeItemListEnd
+      
+      \resumeProjectSubheading
+      {Yelp Ratings Analysis}{Worcester, MA}
+      {WPI} {December 2018}
+      
+      \resumeItemListStart
+        \resumeItem
+        {}
+        {Clustered user reviews of restaurants to breakdown overall rating into food rating and ambience rating, enabling users to make better informed decisions on which establishments to visit for a particular occasion}
+        \resumeItem
+        {}
+        {Used NLTK library to tag Part of Speech (POS) and perform k-means clustering on TF–IDF matrix}
+        
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------------
+\section{experience}
+  \resumeSubHeadingListStart
+  
+    \resumeJobSubheading
+      {Data Science Intern}{Quincy, MA}
+      {National Fire Protection Association} {June 2019 - December 2019}
+      
+      
+      \resumeItemListStart
+        \resumeItem
+        {Geospatial Analytics:}
+        {Geocoded 150M+ addresses using Spark, Lucene and libpostal to analyze incident trends and define response boundaries for fire stations}
+        
+        \resumeItem
+        {Software Engineering:}
+        {Deployed geocoding/reverse-geocoding APIs using Docker to facilitate consumption of services. Achieved 70\% increase in speed with median distance \textless 1 mile from Google's Geocoding API}
+      \resumeItemListEnd
+    
+    \resumeJobSubheading
+      {Graduate Researcher}{Cambridge, MA}
+      {Takeda Pharmaceutical} {January 2019 - May 2019}
+      
+      \resumeItemListStart
+        \resumeItem {}
+        {Large scale deep learning on UK Biobank actigraphy and phenotype dataset (500K subjects) using Tensorflow}
+        \resumeItem {}
+        {Achieved f1 score of .78 and 34.8 rmse in predicting insomnia and age respectively from the actigraphy data using multitask learning with 1D Convolutional Neural Network (CNN) and Long-Short Term Memory (LSTM) networks}
+      \resumeItemListEnd
+      
+    \resumeJobSubheading
+      {Academic and Research Computing Lab Assistant}{Worcester, MA}
+      {WPI} {August 2018 - June 2019}
+      
+      \resumeItemListStart
+      
+        \resumeItem{}
+          {Experience with job scheduling on High Performance Computing (HPC) clusters; Worked with Northeast HPC  group to develop and maintain website for (NSF Award Number: 1659377) to improve its ease of use (\href{https://necyberteam.org/user/164}{necyberteam.org})}
+      
+      \resumeItemListEnd
+
+    \resumeJobSubheading
+      {Product Analyst} {Pune, India} 
+      {Vuclip India Pvt. Ltd.} {April 2016 - June 2018}
+
+      \resumeItemListStart
+        \resumeItem{Complaints Prediction:}
+          {Developed a Random Forest model to predict if a user will complain with cross validation recall of 0.79; preemptively decreased complaints from 11\% to 7\%, avoiding SLA violations and hefty penalties}
+        \resumeItem{Content Recommendation:}
+          {Formed user clusters (k-prototype) based on the type and amount of content consumption and then recommended content based on collaborative filtering}
+        % \resumeItem{Analytics:}
+        %   {Holistic content performance analytics related to Original Series content at Vuclip. Mining market data to improve content production/acquisition strategy}
+        % \resumeItem{Analytics:}
+        %   {Set up analytic processes and frameworks, and helped improve user engagement on the platform through effective use of machine learning.}
+        \resumeItem{Data Engineering:}
+          {Authored numerous Apache Airflow data pipelines to replace cron scripts which significantly reduced database locks, failures and execution time; Improved workload management on multiple servers}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%------------------------------------------------------
+
+%-----------PROJECTS-----------------
+\section{achievements}
+  \resumeSubHeadingListStart
+  
+    \projectsSubItem
+    {\normalfont{Developed the official Android app for VIT college, Pune; Second rank in on-spot android app development competition}}
+      
+    \projectsSubItem
+    {\normalfont{Awarded INSPIRE scholarship (Govt. of India) for being in the top 1 \% students in HSC Examination (Class 10+2)}}
+      
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\end{document}
